@@ -1,0 +1,45 @@
+body,html{width: 100%;height: 100%;background: #F9F8FD;}
+.img_box{width: 100%;}
+.img_box img{width: 100%;height: 176px;}
+.content{background: #fff;width: 96%;padding:0 2%;overflow: hidden;width: 96%;border-bottom: 1px solid #d6d6d6;padding-bottom:15px;}
+.time_box{width: 100%;overflow: hidden;height: 30px;line-height: 30px;text-align: center;}
+.time_box span{width:25%;float: left;background: #429182;color: #fff;display: block;}
+.time_box em{width:75%;float: left;background: #CACBCD;color: #fff;display:block;}
+.nd_title{font-size: 16px;font-weight: 400;margin: 20px 0;}
+.bd_nrbox{overflow: hidden;}
+.bd_nrleft{width:52%;float: left;}
+.bd_nrright{width:32%;float: right;overflow: hidden;}
+.bd_nrleft div{float: left;color: #429182;}
+.bd_Price{font-size: 16px;}
+.bd_jigeb{width: 60px;height:20px;border-radius: 15px;background: #D9E9E6;text-align: center;line-height: 20px;font-size: 12;margin-left:16px; }
+.bd_nrright p{float: left;margin-left: 10px;color: #999;height: 20px;line-height: 20px;}
+.bd_nrright p span{color: #999;}
+.bdnr_list{width: 96%;padding:20px 2% 5px;background: #fff;}
+.bdnr_list li{width: 50%;float: left;color: #666666;margin-bottom: 10px;}
+.bdnrtwo{margin-top: 15px;}
+.company_box{background: #fff;width: 96%;padding:15px 2%;margin-top: 15px;overflow: hidden;}
+#company_logo{width: 40px;height: 40px;float: left;}
+.company_name{height: 40px;line-height: 40px;float: left;margin-left: 15px;font-size: 12px;}
+.more{float: right;line-height: 40px;font-size: 12px;margin-right: 15px;color: #999;}
+.title{width: 100%;font-size: 16px;color: #666;line-height: 48px;font-weight: 400;text-indent: 16px;}
+.liuc_nr{width: 96%;background: #fff;padding: 2%;}
+.liuc_one{width:14%;float: left;}
+.liuc_two{width:7%;float: left;}
+.liuc_one em{display: block;width: 30px;height: 30px;background: url(../img/bgcolor.png) no-repeat;background-size: 30px 30px;text-align: center;line-height: 30px;color: #fff;margin: 0 auto;}
+.liuc_one span{display: block;width: 100%;font-size: 12px;color: #666;margin-top: 5px;text-align: center;}
+.pointer{display: block;width: 13px!important;height: 13px!important;margin: 8px auto 0;}
+.tips{width: 100%;background: #fff;margin-top: 10px;}
+.tips li{width: 100%;height:40px;border-bottom: 1px solid #F5F5F5;}
+.tips li p{width: 92%;height: 100%;padding:0 4%;line-height: 40px;font-size: 14px;background: url(../img/more.png) no-repeat right 4% center;background-size: 10px 17px;}
+.bd_jsconterbox{width: 92%;padding: 4%;font-size: 14px!important;background: #fff;}
+.bd_jsconterbox p{margin-bottom: 14px;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+    body{background: #fff;}
+    .title,.nav{width: 96%;padding:5% 2%;overflow: hidden;border-bottom: 2px solid #F5F5F5;}
+    .title_left{width: 80%;float: left;overflow: hidden;}
+    .pan_logo{width: 25px;height: 25px;float: left;}
+    .pan_name{font-size: 14px;line-height: 20px;float: left;margin-top: 4px;width: 85%;margin-left: 2%;}
+    .title_right{width: 20%;float: right;text-align: right}
+    .title_right a{font-size:14px;margin-top:7px;display: block;color: #999;}
+    .img_thum{width: 96%;padding: 5% 2%;position: relative;}
+    .imgwz_xq{width: 96%;height: 20pt;background: url("../img/gradation.png") no-repeat;background-size: 100% 100%;font-size: 12px;color: #fff;position: absolute;left: 2%;bottom:9%;}
+    .imgwz_xq span,.imgwz_xq em{color: #fff;line-height: 20pt;margin-left: 9pt;}
+    .img_wz{font-size: 14pt;font-weight: normal;}
+    .img_wz em{background: #EA7931;font-size: 10pt;padding: 1% 2%;color: #fff;margin-left: 6px;}
+    .content{width: 96%;padding:0 2%;overflow: hidden;width: 96%;}
+    .line{width: 100%;height: 10pt;background: #F9F8FD;margin-top: 5%;}
+    .nav span{font-size: 14px;width: 50%;padding: 14px 0;display:block;float: left;text-align: center;color: #666;}
+    .nav_active{border-bottom:1px solid #000;color: #000!important;font-size: 16px!important;}
+    .nav{padding-bottom: 0}
+    .bd_list{}
+    .bd_list li{width: 100%;overflow: hidden;padding: 21px 0;}
+    .bd_imgbox{width: 40%;height: 122px;float: left;}
+    .bd_imgbox img{width: 100%;height: 100%;border-radius: 5px;}
+    .bd_wzbox{width: 55%;float: right;}
+    .bd_title{font-size: 14px;line-height: 18px;font-weight: 400;margin-top: 6px;}
+    .bd_time{color: #999999;font-size: 12px;margin-top: 10px;font-weight: 400;}
+    .bd_price{font-size: 16px;margin-top: 18px}
+    .bd_price em{font-size: 12px;margin-left: 18px;}
+    .bd_freq {font-size: 12px;color: #999999;margin-top: 8px}
+    .bd_freq span{color: #999999;}
+    .bd_freq em{color: #999999;}
+    .notice_list{}
+    .notice_title{font-size: 16px;font-weight:400;width: 100%;text-align: center;margin-top: 24px;}
+    .notice_time{font-size: 12px;font-weight:400;color: #999;margin-top: 10px;margin-bottom: 24px;width: 100%;text-align: center;}
+    .notice_list p{font-size:14px;line-height: 20px;font-weight: 400;text-indent: 30px;}
+
+
+
+
