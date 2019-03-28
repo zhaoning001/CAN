@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>欢迎来，Mr.ning博客</title>
+    <title>欢迎来，Mr.ning博客</title>
+    <link rel="stylesheet" href="css/style.css">    
     <style type="text/css">
     html,body{width: 100%;height: 100%;}
     *{padding: 0;margin: 0;}
@@ -14,11 +15,8 @@
 		position: relative;
 	}
 	.box h1{font-size: 32px;color: #fff;width: 100%;text-align: center;font-weight: 400;position: absolute;top: 20%;}
-	.box p{font-size: 20px;color: #fff;width: 100%;text-align: center;font-weight: 400;position: absolute;top: 30%;}
+	.box p{font-size: 20px;color: #fff;width: 100%;text-align: center;font-weight: 400;position: absolute;top: 35%;}
 	em{font-style: normal;}
-
-
-
 	#tab{
             width: 500px;
             height: 200px;
@@ -26,8 +24,8 @@
             background:rgba(193,193,193,.2);/*css3设置渐变*/
             margin-bottom: 100px;
             position: absolute;
-            left: 0;
-            top: 40%
+            right:2%;
+            top: 2%
         }
         #aTime{
             color: #fff;
@@ -85,14 +83,15 @@
             color: #fff;
             padding-top:10px;
         }
+        .box>h2{font-weight: 400;font-size:20px;color: #fff;width: 80%;position: absolute;left: 12%;top: 28%;}
+        .box h2 em{font-weight: 400;font-size:16px;color: #fff;}
     </style>
 </head>
 <body>
     <div class="box">
-    	<h1>您是第<em class="num">1</em>位，欢迎来到Mr.zhaoni的网页</h1>
+        <h1>您是第<em class="num">1</em>位，欢迎来到Mr.zhaoni的网页</h1>
+        <h2>个人签名：<em>一辈子很短，努力的做好两件事就好；第一件事是热爱生活，好好的去爱身边的人；第二件事是努力学习，在工作中取得不一样的成绩，实现自己的价值，而不是仅仅为了赚钱；</em></h2>        
         <p>更多功能还在开发中，敬请期待。。。</p>
-  
-
 	    <div id="tab">
 		    <div id="Tradion">
 		        <div id="hours" class="tran"></div>
@@ -105,6 +104,51 @@
 		    <h3 id="aDate"></h3>
 		    <h2 id="week"></h2>
 	    </div>
+  </div>
+
+  <div class="night">
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+  </div>
+  <div class="night1">
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
   </div>
 </body>
 <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
@@ -156,6 +200,14 @@
                 week.innerHTML=westr;
             }
             Adate();
+
+
+            document.addEventListener('visibilitychange', function () {
+                if (document.visibilityState == 'hidden') {
+                    normal_title = document.title;
+                    document.title = '怎么离开了呢，快回来(灬ꈍ ꈍ灬)';
+                } else document.title = normal_title;
+            });
 }
 </script>
 </html>
