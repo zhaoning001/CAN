@@ -5,6 +5,7 @@
     <title>欢迎来，Mr.ning博客</title>
     <link rel="shortcut icon" href="img/iocn.jpg">
     <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style1.css">    
     <style type="text/css">
     html,body{width: 100%;height: 100%;}
     *{padding: 0;margin: 0;}
@@ -89,6 +90,7 @@
         }
         .box>h2{font-weight: 400;font-size:20px;color: #fff;width: 80%;position: absolute;left: 12%;top: 28%;}
         .box h2 em{font-weight: 400;font-size:16px;color: #fff;}
+        #c{position: absolute;top: 0;left: 0;z-index: 999;}
     </style>
 </head>
 <body>
@@ -109,110 +111,31 @@
 		    <h2 id="week"></h2>
 	    </div>
   </div>
-
-  <div class="night">
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-  </div>
-  <div class="night1">
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-    <div class="shooting_star"></div>
-  </div>
+<canvas id="c"></canvas>
 </body>
-<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
-<script type="text/javascript">
- window.onload=function(){
-            function addzero(num){
-                if(num>=10)
-                {
-                    return ""+num;
-                }
-                else
-                {
-                    return "0"+num;
-                }
-            }
-            
-            function times(){
-                var date=new Date();
-                var aTime=document.getElementById('aTime');
-                var str= addzero(date.getHours())+":"+ addzero(date.getMinutes())+":"+ addzero(date.getSeconds());
-                aTime.innerHTML=str;
-            }
-            setInterval(times,1000);
-            times();
-            function Ttranform(){
-                var date=new Date();
-                var hours=document.getElementById('hours');
-                var minutes=document.getElementById('minutes');
-                var seconds=document.getElementById('seconds');
-                var num=date.getHours();
-                var num2=date.getMinutes();
-                var num3=date.getSeconds();
-                hours.style.transform="rotate("+(num*30-90)+"deg)";
-                minutes.style.transform="rotate("+(num2*6-90)+"deg)";
-                seconds.style.transform="rotate("+(num3*6-90)+"deg)";
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript"></script>
+<script>
 
-            }
-            setInterval(Ttranform,1000);
-            Ttranform();
+</script>
 
-             function Adate(){
-                var date=new Date();
-                var aDate=document.getElementById("aDate");
-                var week=document.getElementById('week');
-                var weekList=["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
-                var str= date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-                aDate.innerHTML=str;
-                var westr=weekList[date.getDay()];
-                week.innerHTML=westr;
-            }
-            Adate();
+<script id="shader-fs" type="x-shader/x-fragment">
+    #ifdef GL_ES
+      precision highp float;
+      #endif
+void main(void) {
+ gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+}
+</script>
 
+<script id="shader-vs" type="x-shader/x-vertex">
+attribute vec3 vertexPosition;
 
-            document.addEventListener('visibilitychange', function () {
-                if (document.visibilityState == 'hidden') {
-                    normal_title = document.title;
-                    document.title = '怎么离开了呢，快回来(灬ꈍ ꈍ灬)';
-                } else document.title = normal_title;
-            });
-            
+uniform mat4 modelViewMatrix;
+uniform mat4 perspectiveMatrix;
+
+void main(void) {
+gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
 }
 </script>
 </html>
